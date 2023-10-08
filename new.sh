@@ -11,7 +11,7 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 
-var=$(./terraform output instance-public-ip)
+var=$(terraform output instance-public-ip)
 
 echo "hello" + $var
 sleep 1m
